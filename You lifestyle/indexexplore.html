@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOU - It's all Start from you</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="styleA.css">
+
+</head>
+
+<body>
+    <div class="loader"><span></span></div>
+    <style>
+        .loader span {
+            position: absolute;
+            display: block;
+            top: 50%;
+            left: 50%;
+            width: 120px;
+            height: 120px;
+            margin: -60px 0 0 -60px;
+            border: 16px solid #cacaca;
+            border-top: 16px solid #3498db;
+            border-radius: 50%;
+            animation: spin 2s linear infinite;
+        }
+
+        .loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: var(--body-color);
+            z-index: 100;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+    <div class="navbar">
+        <div class="navbar__container">
+            <div class="navbar__left">
+                <i class="menu__icon fa-solid fa-bars" id="menu__open"></i>
+                <a class="nav-logo" href="/"><img src="images/logo.jpg" alt="you"></a>
+            </div>
+            <div class="navbar__links">
+                <i class="fa fa-times" id="menu__close"></i>
+                <ul class="menu__items">
+                    <li class="menu__item"><a class="nav__link" href="/">Home</a></li>
+                    <li class="menu__item"><a class="nav__link" href="#">About Us</a></li>
+                    <li class="menu__item"><a class="nav__link" href="#">Contact Us</a></li>
+                    <li class="menu__item"><a class="nav__link" href="login.php">Login</a></li>
+                </ul>
+            </div>
+            <div class="navbar__right">
+                <i class="menu__icon fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/slide-1.webp" alt="slider image" /></div>
+            <div class="swiper-slide"><img src="images/slide-1.webp" alt="slider image" /></div>
+            <div class="swiper-slide"><img src="images/slide-1.webp" alt="slider image" /></div>
+            <div class="swiper-slide"><img src="images/slide-1.webp" alt="slider image" /></div>
+            <div class="swiper-slide"><img src="images/slide-1.webp" alt="slider image" /></div>
+            <div class="swiper-slide"><img src="images/slide-1.webp" alt="slider image" /></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <section class="products">
+        <div class="products__container">
+            <h2 class="section__title">Our Products</h2>
+            <h3 class="section__subtitle">Cloth Collection</h3>
+            <div class="grid product__items">
+
+                <div class="product__item">
+                    <img src="images/logo.jpg" alt="">
+                    <div class="product__info">
+                        <h5 class="product__title">MIND ON MILLIONS OVERSIZED T-SHIRT</h5>
+                        <h4 class="product__price"><del>&#x20B9; 1499</del> &#x20B9; 999</h4>
+                    </div>
+                </div>
+                <div class="product__item">
+                    <img src="images/logo.jpg" alt="">
+                    <div class="product__info">
+                        <h5 class="product__title">MIND ON MILLIONS OVERSIZED T-SHIRT</h5>
+                        <h4 class="product__price"><del>&#x20B9; 1499</del> &#x20B9; 999</h4>
+                    </div>
+                </div>
+                <div class="product__item">
+                    <img src="images/logo.jpg" alt="">
+                    <div class="product__info">
+                        <h5 class="product__title">MIND ON MILLIONS OVERSIZED T-SHIRT</h5>
+                        <h4 class="product__price"><del>&#x20B9; 1499</del> &#x20B9; 999</h4>
+                    </div>
+                </div>
+                <div class="product__item">
+                    <img src="images/logo.jpg" alt="">
+                    <div class="product__info">
+                        <h5 class="product__title">MIND ON MILLIONS OVERSIZED T-SHIRT</h5>
+                        <h4 class="product__price"><del>&#x20B9; 1499</del> &#x20B9; 999</h4>
+                    </div>
+                </div><div class="product__item">
+                    <img src="images/logo.jpg" alt="">
+                    <div class="product__info">
+                        <h5 class="product__title">MIND ON MILLIONS OVERSIZED T-SHIRT</h5>
+                        <h4 class="product__price"><del>&#x20B9; 1499</del> &#x20B9; 999</h4>
+                    </div>
+                </div>
+                <div class="product__item">
+                    <img src="images/logo.jpg" alt="">
+                    <div class="product__info">
+                        <h5 class="product__title">MIND ON MILLIONS OVERSIZED T-SHIRT</h5>
+                        <h4 class="product__price"><del>&#x20B9; 1499</del> &#x20B9; 999</h4>
+                    </div>
+                </div>
+                <div class="product__item">
+                    <img src="images/logo.jpg" alt="">
+                    <div class="product__info">
+                        <h5 class="product__title">MIND ON MILLIONS OVERSIZED T-SHIRT</h5>
+                        <h4 class="product__price"><del>&#x20B9; 1499</del> &#x20B9; 999</h4>
+                    </div>
+                </div>
+                <div class="product__item">
+                    <img src="images/logo.jpg" alt="">
+                    <div class="product__info">
+                        <h5 class="product__title">MIND ON MILLIONS OVERSIZED T-SHIRT</h5>
+                        <h4 class="product__price"><del>&#x20B9; 1499</del> &#x20B9; 999</h4>
+                    </div>
+                </div>
+                
+                
+            </div>
+
+            <h3 class="section__subtitle">Other Products</h3>
+            <div class="grid product__items">
+                <div class="product__item">
+                    <img src="images/logo.jpg" alt="">
+                    <div class="product__info">
+                        <h5 class="product__title">MIND ON MILLIONS OVERSIZED T-SHIRT</h5>
+                        <h4 class="product__price"><del>&#x20B9; 1499</del> &#x20B9; 999</h4>
+                    </div>
+                </div>
+                <div class="product__item">
+                    <img src="images/logo.jpg" alt="">
+                    <div class="product__info">
+                        <h5 class="product__title">MIND ON MILLIONS OVERSIZED T-SHIRT</h5>
+                        <h4 class="product__price"><del>&#x20B9; 1499</del> &#x20B9; 999</h4>
+                    </div>
+                </div>
+                <div class="product__item">
+                    <img src="images/logo.jpg" alt="">
+                    <div class="product__info">
+                        <h5 class="product__title">MIND ON MILLIONS OVERSIZED T-SHIRT</h5>
+                        <h4 class="product__price"><del>&#x20B9; 1499</del> &#x20B9; 999</h4>
+                    </div>
+                </div>
+                <div class="product__item">
+                    <img src="images/logo.jpg" alt="">
+                    <div class="product__info">
+                        <h5 class="product__title">MIND ON MILLIONS OVERSIZED T-SHIRT</h5>
+                        <h4 class="product__price"><del>&#x20B9; 1499</del> &#x20B9; 999</h4>
+                    </div>
+                </div>
+                <div class="product__item">
+                    <img src="images/logo.jpg" alt="">
+                    <div class="product__info">
+                        <h5 class="product__title">MIND ON MILLIONS OVERSIZED T-SHIRT</h5>
+                        <h4 class="product__price"><del>&#x20B9; 1499</del> &#x20B9; 999</h4>
+                    </div>
+                </div>
+                <div class="product__item">
+                    <img src="images/logo.jpg" alt="">
+                    <div class="product__info">
+                        <h5 class="product__title">MIND ON MILLIONS OVERSIZED T-SHIRT</h5>
+                        <h4 class="product__price"><del>&#x20B9; 1499</del> &#x20B9; 999</h4>
+                    </div>
+                </div>
+                <div class="product__item">
+                    <img src="images/logo.jpg" alt="">
+                    <div class="product__info">
+                        <h5 class="product__title">MIND ON MILLIONS OVERSIZED T-SHIRT</h5>
+                        <h4 class="product__price"><del>&#x20B9; 1499</del> &#x20B9; 999</h4>
+                    </div>
+                </div>
+                <div class="product__item">
+                    <img src="images/logo.jpg" alt="">
+                    <div class="product__info">
+                        <h5 class="product__title">MIND ON MILLIONS OVERSIZED T-SHIRT</h5>
+                        <h4 class="product__price"><del>&#x20B9; 1499</del> &#x20B9; 999</h4>
+                    </div>
+                </div>
+               
+
+            </div>
+        </div>
+    </section>
+
+    <section class="bottom">
+        <h1 class="section__title">About Us</h1>
+        <p class="about__description">Founded with the dogma of creating impact through candor, directness, and
+            thoughtfulness. You supports small businesses all across India to create an affordable, reliable shopping
+            chain and revolutionize entrepreneurship.</p>
+    </section>
+
+    <footer>
+        <p class="coppyright">&copy; 2023 All Rights Reserved</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://kit.fontawesome.com/8924281129.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            loop: true,
+            autoplay: {
+                delay: 2600,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+
+</html>

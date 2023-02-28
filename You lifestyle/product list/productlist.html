@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="link page style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar__container">
+            <a class="nav-logo" href="/"><img src="images/logo.jpg" alt="you"></a>
+
+            <i class="fa-solid fa-bars" id="menu__open"></i>
+            <div class="navbar__links">
+                <i class="fa fa-times" id="menu__close"></i>
+                <ul class="menu__items">
+                    <a href="/"><li class="menu__item">Home</li></a>
+                    <a href="#"><li class="menu__item">About Us</li></a>
+                    <a href="#"><li class="menu__item">Contact Us</li></a>
+                    <a href="login.php"><li class="menu__item">Login</li></a>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+
+
+<main>
+    <div id="filterMenu" style="font-size: 18px;" 
+    onclick=
+    "let filter=document.getElementById('filters');
+    filter.style.height=='0px'?filter.style.height='550px':filter.style.height='0px'"
+    >
+        filter options&blacktriangledown;
+    </div>
+    <div id="filters" style="z-index: 1;">
+        <div>
+            <form action="">
+                <b style="font-weight: bold;">Sort</b><br>
+                <div style="padding-left: 10px;">
+                    <input type="radio" name="order" value="asc"> Ascending<br>
+                    <input type="radio" name="order" value="desc"> Descending<br><br>
+                    <input type="radio" name="sort" value="latest"> Latest<br>
+                    <input type="radio" name="sort" value="price"> Price<br>
+                    <input type="radio" name="sort" value="Trending"> Trending<br>
+                </div><br>
+                <b style="font-weight: bold;">Price range</b><br>
+                <span id="minr" class="rangeVals">300</span>
+                <input type="range" name="lower" id="lower" min="0" max="400"
+                onmousemove="
+                let minr=document.getElementById('minr');
+                minr.innerText=500-value"
+                ><input type="range" name="upper" id="upper" min="500" max="1000"
+                onmousemove="
+                let maxr=document.getElementById('maxr');
+                maxr.innerText=value">
+                <span id="maxr" class="rangeVals">750</span><br><br>
+                <b style="font-weight: bold;">Rating</b>
+            </form>
+        </div>
+    </div>
+    <div id="grid" style="z-index: 2;">
+        <div id="product1" class="item">
+            <img src="images/photo1674577410.jpeg" alt="">
+            <div style="padding: 5px;">
+                <span class="price">&#8377;500</span><br>
+                <span class="mrp">&#8377;600</span>
+                <h3>Green White Cloth</h3>
+                
+            </div>
+        </div>
+        <div id="product1" class="item">
+            <img src="images/photo1674577410.jpeg" alt="">
+            <div style="padding: 5px;">
+                <span class="price">&#8377;500</span><br>
+                <span class="mrp">&#8377;600</span>
+                <h3>Green White Cloth</h3>
+                
+            </div>
+        </div>
+        <div id="product1" class="item">
+            <img src="images/photo1674577410.jpeg" alt="">
+            <div style="padding: 5px;">
+                <span class="price">&#8377;500</span><br>
+                <span class="mrp">&#8377;600</span>
+                <h3>Green White Cloth</h3>
+                
+            </div>
+        </div>
+        <div id="product1" class="item">
+            <img src="images/photo1674577410.jpeg" alt="">
+            <div style="padding: 5px;">
+                <span class="price">&#8377;500</span><br>
+                <span class="mrp">&#8377;600</span>
+                <h3>Green White Cloth</h3>
+                
+            </div>
+        </div>
+        <div id="product1" class="item">
+            <img src="images/photo1674577410.jpeg" alt="">
+            <div style="padding: 5px;">
+                <span class="price">&#8377;500</span><br>
+                <span class="mrp">&#8377;600</span>
+                <h3>Green White Cloth</h3>
+                
+            </div>
+        </div>
+        <div id="product1" class="item">
+            <img src="images/photo1674577410.jpeg" alt="">
+            <div style="padding: 5px;">
+                <span class="price">&#8377;500</span><br>
+                <span class="mrp">&#8377;600</span>
+                <h3>Green White Cloth</h3>
+                
+            </div>
+        </div>
+    </div>
+</main>
+    
+
+
+    <section class="bottom">
+        <h1 class="section__title">About Us</h1>
+        <p class="about__description">Founded with the dogma of creating impact through candor, directness, and
+            thoughtfulness. You supports small businesses
+            all across India to create an affordable, reliable shopping chain and revolutionize entrepreneurship.</p>
+    </section>
+    <footer>
+
+        <p class="coppyright">&copy; 2023 All Rights Reserved
+    </footer>
+    <script src="https://kit.fontawesome.com/8924281129.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
